@@ -1,0 +1,38 @@
+# Environment variables
+export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_STATE_HOME="$HOME/.local/state"
+export XDG_CACHE_HOME="$HOME/.cache"
+
+export EDITOR=nvim
+
+export LESSHISTFILE="$XDG_STATE_HOME/less/history"
+export _JAVA_OPTIONS="-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java"
+
+# zsh history configuration
+HISTFILE="$XDG_STATE_HOME/zsh/history"
+HISTSIZE=1000
+SAVEHIST=1000
+
+# Change to store stuff in .config
+export ZDOTENV="$XDG_CONFIG_HOME/zsh"
+
+zstyle ':completion:*' completer _complete _ignored _approximate
+zstyle ':completion:*' matcher-list 'm:{[:lower:]}={[:upper:]}' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}'
+zstyle :compinstall filename '/home/erre/.zshrc'
+
+autoload -Uz compinit
+compinit
+compinit -d "$XDG_CONFIG_HOME/zsh/zcompdump"
+
+setopt autocd extendedglob notify
+unsetopt beep nomatch
+bindkey -e
+
+# Aliases
+alias ls="exa --icons"
+
+
+# Start starship prompt
+eval "$(starship init zsh)"
+
