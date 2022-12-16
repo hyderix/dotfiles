@@ -1,4 +1,4 @@
-theme = "default"
+theme = "onedark"
 
 [editor.cursor-shape]
 normal = "block"
