@@ -1,8 +1,8 @@
 "" General
 set number	" Show line numbers
-set linebreak	" Break lines at word (requires Wrap lines)
-set showbreak=+++ 	" Wrap-broken line prefix
-set textwidth=100	" Line wrap (number of cols)
+"set linebreak	" Break lines at word (requires Wrap lines)
+"set showbreak=+++ 	" Wrap-broken line prefix
+"set textwidth=100	" Line wrap (number of cols)
 set showmatch	" Highlight matching brace
 set visualbell	" Use visual bell (no beeping)
  
@@ -27,10 +27,12 @@ set backspace=indent,eol,start	" Backspace behaviour
 
 call plug#begin()
 Plug 'vim-airline/vim-airline'
-Plug 'dracula/vim'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'Townk/vim-autoclose'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'ayu-theme/ayu-vim'
 call plug#end()
 
-
-colorscheme dracula
+let g:airline_theme='ayu_dark'
+let ayucolor="dark"
+colorscheme ayu
