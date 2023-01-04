@@ -32,6 +32,11 @@ bindkey -e
 # Aliases
 alias ls="exa --icons"
 
+# Functions
+mkcd() {
+    mkdir "$1"
+    cd "$1"
+}
 
 # Start starship prompt
 eval "$(starship init zsh)"
