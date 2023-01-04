@@ -19,7 +19,7 @@ vim.cmd("colorscheme dracula")
 -- nvim-treesitter
 require'nvim-treesitter.configs'.setup {
     -- A list of parser names, or "all"
-    ensure_installed = { "c", "lua", "rust", "latex", "python", "markdown" },
+    ensure_installed = { "c", "lua", "rust", "latex", "python", "markdown", "toml" },
 
     -- Install parsers synchronously (only applied to `ensure_installed`)
     sync_install = false,
