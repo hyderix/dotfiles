@@ -1,6 +1,6 @@
 
 -- Lualine setup
-lualine = require("lualine")
+local lualine = require("lualine")
 lualine.setup {
     options = {
 	theme = "dracula",
@@ -49,3 +49,17 @@ require'nvim-treesitter.configs'.setup {
 	additional_vim_regex_highlighting = false,
     },
 }
+
+-- Setup lsp-zero
+local lsp = require('lsp-zero')
+lsp.preset('recommended')
+
+lsp.ensure_installed({
+    'clangd',
+    'rust_analyzer',
+    'texlab',
+})
+
+lsp.nvim_workspace()
+
+lsp.setup()
