@@ -29,13 +29,10 @@
             "warning": 30,
             "critical": 15
         },
-        "format": "{capacity}% {icon}",
+        "format": "{capacity}% battery",
         "format-charging": "{capacity}% charging",
-        "format-plugged": "{capacity}% ",
-        "format-alt": "{time} {icon}",
-        // "format-good": "", // An empty format will hide the module
-        // "format-full": "",
-        "format-icons": ["", "", "", "", ""]
+        "format-plugged": "{capacity}% plugged",
+        "format-alt": "{time} left",
     },
     "battery#bat2": {
         "bat": "BAT2"
