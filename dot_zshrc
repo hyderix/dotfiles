@@ -9,7 +9,7 @@ export EDITOR=nvim
 export LESSHISTFILE="$XDG_STATE_HOME/less/history"
 export _JAVA_OPTIONS="-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java"
 
-export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/gcr/ssh"
+export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/keyring/ssh"
 
 # zsh history configuration
 HISTFILE="$XDG_STATE_HOME/zsh/history"
