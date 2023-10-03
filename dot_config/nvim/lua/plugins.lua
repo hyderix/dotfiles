@@ -10,6 +10,8 @@ return require('packer').startup(function(use)
 
     use 'dracula/vim'
 
+    use 'lervag/vimtex'
+
     use {
 	'nvim-treesitter/nvim-treesitter',
 	run = ':TSUpdate'
