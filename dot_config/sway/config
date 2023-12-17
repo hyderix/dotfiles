@@ -8,7 +8,7 @@ set $right l
 # Terminal emulator used
 set $term alacritty
 # Application launcher
-set $menu wofi --show drun
+set $menu fuzzel
 
 font pango: FiraCode Nerd Font Regular 16
 
@@ -36,10 +36,13 @@ exec swayidle -w \
 
 # Could be replaced by type:touchpad and type:keyboard but explicit is nice
 
-# Keyboard configuration for Thinkpad
-input 1:1:AT_Translated_Set_2_keyboard {
+input type:keyboard {
     xkb_layout "se"
     xkb_options "caps:escape"
+}
+
+# Keyboard configuration for Thinkpad
+input 1:1:AT_Translated_Set_2_keyboard {
     xkb_model "pc98"
 }
 
@@ -196,6 +199,9 @@ bar {
 }
 
 include /etc/sway/config.d/*
+
+# Notifications
+exec mako
 
 # Night light
 exec gammastep
