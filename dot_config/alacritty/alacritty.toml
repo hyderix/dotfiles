@@ -1,6 +1,3 @@
-
-v-----Start TOML for "/home/erre/.config/alacritty/alacritty.yml"-----v
-
 [colors.bright]
 black = "#6272a4"
 blue = "#d6acff"
@@ -79,6 +76,3 @@ history = 2000
 [window]
 dynamic_title = true
 title = "Terminal"
-
-^-----End TOML for "/home/erre/.config/alacritty/alacritty.yml"-----^
-Successfully migrated "/home/erre/.config/alacritty/alacritty.yml" to "/home/erre/.config/alacritty/alacritty.toml"
