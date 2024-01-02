@@ -1,0 +1,84 @@
+
+v-----Start TOML for "/home/erre/.config/alacritty/alacritty.yml"-----v
+
+[colors.bright]
+black = "#6272a4"
+blue = "#d6acff"
+cyan = "#a4ffff"
+green = "#69ff94"
+magenta = "#ff92df"
+red = "#ff6e6e"
+white = "#ffffff"
+yellow = "#ffffa5"
+
+[colors.cursor]
+cursor = "CellForeground"
+text = "CellBackground"
+
+[colors.footer_bar]
+background = "#282a36"
+foreground = "#f8f8f2"
+
+[colors.hints.end]
+background = "#282a36"
+foreground = "#f1fa8c"
+
+[colors.hints.start]
+background = "#f8f8f2"
+foreground = "#282a36"
+
+[colors.normal]
+black = "#21222c"
+blue = "#bd93f9"
+cyan = "#8be9fd"
+green = "#50fa7b"
+magenta = "#ff79c6"
+red = "#ff5555"
+white = "#f8f8f2"
+yellow = "#f1fa8c"
+
+[colors.primary]
+background = "#282a36"
+bright_foreground = "#ffffff"
+foreground = "#f8f8f2"
+
+[colors.selection]
+background = "#44475a"
+text = "CellBackground"
+
+[colors.vi_mode_cursor]
+cursor = "CellForeground"
+text = "CellBackground"
+
+[cursor.style]
+blinking = "Off"
+shape = "Block"
+
+[font]
+size = 16.0
+
+[font.bold]
+family = "FiraCode Nerd Font Mono"
+style = "Bold"
+
+[font.bold_italic]
+family = "FiraCode Nerd Font Mono"
+style = "Bold Italic"
+
+[font.italic]
+family = "FiraCode Nerd Font Mono"
+style = "Italic"
+
+[font.normal]
+family = "FiraCode Nerd Font Mono"
+style = "Regular"
+
+[scrolling]
+history = 2000
+
+[window]
+dynamic_title = true
+title = "Terminal"
+
+^-----End TOML for "/home/erre/.config/alacritty/alacritty.yml"-----^
+Successfully migrated "/home/erre/.config/alacritty/alacritty.yml" to "/home/erre/.config/alacritty/alacritty.toml"
