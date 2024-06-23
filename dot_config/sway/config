@@ -23,6 +23,12 @@ client.urgent #434c5e #434c5e #eceff4 #434c5e #434c5e
 # Background configuration
 output * bg /home/erre/Wallpaper/current.jpg center
 
+# Internal monitor config
+output eDP-1 pos 0 0 res 1920x1080
+
+# TV config
+output HDMI-A-2 pos 1920 0 res 3840x2160 
+
 # Idle configuration
 exec swayidle -w \
 	 timeout 300 'brightnessctl set 5%' \
