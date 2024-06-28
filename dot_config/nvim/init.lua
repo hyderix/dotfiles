@@ -162,12 +162,17 @@ require('lazy').setup({
     {
 	'neovim/nvim-lspconfig',
 	config = function()
-	    local servers = {'rust_analyzer', 'gopls', 'nil', 'pyright'}
+	    local servers = {'rust_analyzer', 'gopls', 'pyright'}
 	    for _, server in ipairs(servers) do
 		if vim.fn.executable(server) == 1 then
 		    require('lspconfig')[server].setup{}
 		end
 	    end
+	    -- workaround for nil
+	    if vim.fn.executable('nil') == 1 then
+		require'lspconfig'.nil_ls.setup{}
+	    end
+	    
 	end,
     },
 })
