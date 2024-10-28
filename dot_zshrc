@@ -36,6 +36,7 @@ alias ls="exa --icons"
 alias vim="nvim"
 alias docker="podman"
 alias lock="swaylock"
+alias cd="z"
 
 # Functions
 mkcd() {

@@ -63,6 +63,8 @@ vim.opt.hlsearch = false
 -- vim.opt.showbreak = "+++"
 vim.opt.linebreak = false
 
+vim.opt.wrap = false
+
 -- Indentation using spaces
 vim.opt.autoindent = true
 vim.opt.shiftwidth = 4
@@ -162,7 +164,7 @@ require('lazy').setup({
     {
 	'neovim/nvim-lspconfig',
 	config = function()
-	    local servers = {'rust_analyzer', 'gopls', 'pyright'}
+	    local servers = {'rust_analyzer', 'gopls', 'pyright', 'clangd'}
 	    for _, server in ipairs(servers) do
 		if vim.fn.executable(server) == 1 then
 		    require('lspconfig')[server].setup{}
