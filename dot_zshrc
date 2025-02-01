@@ -44,9 +44,13 @@ mkcd() {
     cd "$1"
 }
 
-# Start starship prompt
-eval "$(starship init zsh)"
+# Init direnv
+eval "$(direnv hook zsh)"
 
 # Initialize zoxide
 eval "$(zoxide init zsh)"
+
+# Start starship prompt
+eval "$(starship init zsh)"
+
 
