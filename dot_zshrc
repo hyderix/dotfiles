@@ -4,7 +4,8 @@ export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_STATE_HOME="$HOME/.local/state"
 export XDG_CACHE_HOME="$HOME/.cache"
 
-export EDITOR=nvim
+export EDITOR=helix
+alias hx='helix'
 
 export LESSHISTFILE="$XDG_STATE_HOME/less/history"
 export _JAVA_OPTIONS="-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java"

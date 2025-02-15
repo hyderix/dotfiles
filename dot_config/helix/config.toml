@@ -1,4 +1,4 @@
-theme = "dracula"
+theme = "darcula"
 
 [editor.cursor-shape]
 normal = "block"
