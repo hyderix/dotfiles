@@ -14,8 +14,8 @@ export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/gcr/ssh"
 
 # zsh history configuration
 HISTFILE="$XDG_STATE_HOME/zsh/history"
-HISTSIZE=1000
-SAVEHIST=1000
+HISTSIZE=10000000
+SAVEHIST=10000000
 
 # Change to store stuff in .config
 export ZDOTENV="$XDG_CONFIG_HOME/zsh"
