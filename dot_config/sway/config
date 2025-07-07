@@ -9,7 +9,7 @@ set $term foot
 # Application launcher
 set $menu fuzzel
 
-font pango: FiraCode Nerd Font Regular 16
+font pango: FiraCode Nerd Font Regular 15
 
 # Border configuration
 default_border pixel 2
@@ -26,7 +26,11 @@ output * bg /home/erre/Wallpaper/current.jpg center
 output eDP-1 pos 0 0 res 1920x1080
 
 # TV config
-output HDMI-A-2 pos 1920 0 res 3840x2160 
+# output HDMI-A-2 pos 1920 0 res 3840x2160 
+
+# SVIVE
+output HDMI-A-2 mode 1920x1080@60Hz
+
 
 # Idle configuration
 exec swayidle -w \
@@ -207,6 +211,3 @@ include /etc/sway/config.d/*
 
 # Notifications
 exec mako
-
-# Night light
-exec gammastep

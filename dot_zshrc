@@ -38,6 +38,7 @@ alias vim="nvim"
 alias docker="podman"
 alias lock="swaylock"
 alias cd="z"
+alias p="python3"
 
 # Functions
 mkcd() {
