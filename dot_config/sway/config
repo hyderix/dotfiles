@@ -20,7 +20,7 @@ client.unfocused #3b4252 #3b4252 #eceff4 #3b4252 #3b4252
 client.urgent #434c5e #434c5e #eceff4 #434c5e #434c5e
 
 # Background configuration
-output * bg /home/erre/Wallpaper/current.jpg center
+output * bg /home/erre/Wallpaper/current.jpg fit
 
 # Internal monitor config
 output eDP-1 pos 0 0 res 1920x1080
@@ -203,8 +203,15 @@ bindsym XF86MonBrightnessUp exec brightnessctl set 5%+
 bindsym XF86Search exec $menu
 
 # Status Bar:
+# bar {
+#     swaybar_command waybar
+# }
+
 bar {
-    swaybar_command waybar
+    font pango: FiraCode Nerd Font Regular 13
+    output *
+    position top
+    status_command i3status
 }
 
 include /etc/sway/config.d/*
