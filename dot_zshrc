@@ -10,7 +10,7 @@ alias hx='helix'
 export LESSHISTFILE="$XDG_STATE_HOME/less/history"
 export _JAVA_OPTIONS="-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java"
 
-export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/gcr/ssh"
+export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 
 # zsh history configuration
 HISTFILE="$XDG_STATE_HOME/zsh/history"
@@ -39,6 +39,9 @@ alias docker="podman"
 alias lock="swaylock"
 alias cd="z"
 alias p="python3"
+alias n="nnn"
+alias nn="nnn"
+alias nnnn="nnn"
 
 # Functions
 mkcd() {
@@ -52,7 +55,6 @@ eval "$(direnv hook zsh)"
 # Initialize zoxide
 eval "$(zoxide init zsh)"
 
-# Start starship prompt
-eval "$(starship init zsh)"
+PROMPT="%B[%F{green}%n@%m%f:%F{blue}%~%f]$%b "
 
 
