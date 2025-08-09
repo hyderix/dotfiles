@@ -1,0 +1,4 @@
+[Desktop Entry]
+Name=WL Ungoogled Chromium
+Type=Application
+Exec=/usr/bin/flatpak run io.github.ungoogled_software.ungoogled_chromium --ozone-platform-hint=auto
