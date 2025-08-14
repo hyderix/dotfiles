@@ -60,7 +60,6 @@ alias p="python3"
 alias n="nnn"
 alias nn="nnn"
 alias nnnn="nnn"
-alias ugc="flatpak run io.github.ungoogled_software.ungoogled_chromium --ozone-platform-hint=auto"
 
 # Functions
 mkcd() {
@@ -75,5 +74,3 @@ eval "$(direnv hook zsh)"
 eval "$(zoxide init zsh)"
 
 PROMPT="%B[%F{green}%n@%m%f:%F{blue}%~%f]$%b "
-
-
