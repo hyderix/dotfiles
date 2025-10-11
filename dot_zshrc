@@ -53,13 +53,21 @@ bindkey -e
 # Aliases
 alias ls="exa --icons"
 alias vim="nvim"
-alias docker="podman"
 alias lock="swaylock"
 alias cd="z"
 alias p="python3"
 alias n="nnn"
 alias nn="nnn"
 alias nnnn="nnn"
+
+# Nix aliases
+alias nf="nix fmt"
+
+nr() {
+    local PKG="$1"
+    shift
+    nix run "nixpkgs#$PKG" -- $@
+}
 
 # Functions
 mkcd() {
