@@ -50,6 +50,8 @@ setopt autocd extendedglob notify
 unsetopt beep nomatch
 bindkey -e
 
+setopt HIST_IGNORE_SPACE
+
 # Aliases
 alias ls="exa --icons"
 alias vim="nvim"
